@@ -14,5 +14,15 @@
     border-width: 10px;
 }
 .tableStyleClass{
+    border-color: sienna;
+    border: 1px;
+    padding: 5px;
+    border-spacing: 1px;
+    border-radius: 4px;
+    font-size: xx-large;
 
+}
+
+td,th{
+    border:3px solid;
 }
