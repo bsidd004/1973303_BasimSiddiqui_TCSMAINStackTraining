@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="addData.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css"/>
 
+</head>
+<body onload="createTable()">
+
+    <table id="budgetList">
+        <thead>
+            <tr>
+                <th>Client</th>
+                <th>Project</th>
+                <th>Budget</th>
+            </tr>
+        </thead> 
+        <tbody>
+ 
+        </tbody>
+     </table>
+     <h1>The current annual budget is:  <span id="myText"></span></h1>
+     <a href="MainPage.html">Back to Home</a> 
 </body>
 </html>
