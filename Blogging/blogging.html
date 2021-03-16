@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="blog.js"></script>
+</head>
+<body>
+    <form action="" method="GET" class="form-group">
+        <div class="styleLink">
+            <a href="#">Add Blog</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Home</a>
+        </div>
+        <br/>
+        <div class="row">
+            <h2 class="col-4">Add To Blog</h2>
+        </div>
+        <div class="row">
+            <label class="col-2">Title</label>
+            <input type="text" name="title" class="col-2" id="title"/>
+        </div>
+        <div class="row">
+            <label class="col-2">Article</label>
+            <textarea type="text" name="article" class="col-2" id="article"></textarea>
+        </div>
+        <div class="row">
+            <label class="col-2">Image Link</label>
+            <input type="text" name="img" class="col-2" id="image"/>
+        </div>
+        <div class="row">
+            <input type="button" value="AddBlog" class="btn btn-primary col-2" onclick="addBlog()"/>
+        </div>
+        <div>
+            <div id="titleInfo"></div>
+            <div id="descInfo"></div>
+            <img src="" id="imageInfo"/>
+        </div>
+        <table id="blogTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Article</th>
+                    <th>Image Link</th>
+                </tr>
+            </thead> 
+            <tbody>
+     
+            </tbody>
+         </table>
+
+    </form>
+</body>
+</html>

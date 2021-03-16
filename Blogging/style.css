@@ -1,0 +1,15 @@
+.styleLink{
+    float: right;
+    background-color: silver;
+    font-size: x-large;
+    color: white;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
