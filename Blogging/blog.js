@@ -35,3 +35,22 @@ function createTable(j){
 
 
 }
+function createLoadTable(){
+
+for (y=0;y<localStorage.length;y++){
+    var table = document.getElementById("blogTable");
+    var body = table.getElementsByTagName("tbody")[0];
+    var newrow = body.insertRow(body.length);
+    var string=localStorage.getItem("blog"+JSON.stringify(y));
+    var obj=JSON.parse(string);
+
+
+    var cell1=newrow.insertCell(0);
+    cell1.innerHTML=obj.title;
+    var cell2=newrow.insertCell(1);
+    cell2.innerHTML=obj.article;
+    var cell3=newrow.insertCell(2);
+    cell3.innerHTML=obj.image;
+}
+
+}
