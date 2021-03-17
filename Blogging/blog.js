@@ -24,6 +24,7 @@ function createTable(j){
         var newrow = body.insertRow(body.length);
         var string=localStorage.getItem("blog"+JSON.stringify(j));
         var obj=JSON.parse(string);
+ 
 
         var cell1=newrow.insertCell(0);
         cell1.innerHTML=obj.title;
