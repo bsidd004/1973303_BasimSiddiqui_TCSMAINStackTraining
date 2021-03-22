@@ -1,0 +1,12 @@
+p{
+    font-size: x-large;
+}
+label{
+    font-size: x-large;
+}
+table, th, td {
+    border: 1px solid black;
+    font-size: x-large;
+    width: 1000px;
+    text-align: center;
+}
