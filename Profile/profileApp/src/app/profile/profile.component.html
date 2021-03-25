@@ -1,0 +1,22 @@
+<div>
+<form [formGroup]="profileRef" (ngSubmit)="addToTable()">
+    <label>Contact Name</label>
+    <input type="text" formControlName="contactName"/><br/><br/>
+    <label>Phone Number</label>
+    <input type="text" formControlName="phoneNumber"/><br/><br/>
+    <input type="submit" value="submit"/>
+    <input type="reset" value="reset"/>
+</form>
+    <br/>
+    <br/>
+    <table border="1">
+        <tr>
+            <th>Contact Name</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr *ngFor="let info of contactList">
+            <td>{{info.contact}}</td>
+            <td>{{info.phone}}</td>
+        </tr>
+    </table>
+</div>

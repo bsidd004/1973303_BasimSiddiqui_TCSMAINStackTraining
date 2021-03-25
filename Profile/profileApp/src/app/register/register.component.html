@@ -1,0 +1,17 @@
+<div>
+    <form [formGroup]="registerRef" (ngSubmit)="saveLocal()">
+        
+        <label>First Name</label>
+        <input type="text"/><br/>
+        <label>Last Name</label>
+        <input type="text"/><br/>
+        <label>Username</label>
+        <input type="text" formControlName="userName"/><br/>
+        <label>Password</label>
+        <input type="password" formControlName="passWord"/><br/>
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/>
+    <input type="button" value="Login" (click)="login()"/>
+</div>
