@@ -1,0 +1,10 @@
+.cliente {
+    margin-top:10px;
+    border: #cdcdcd 2px solid;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+  }

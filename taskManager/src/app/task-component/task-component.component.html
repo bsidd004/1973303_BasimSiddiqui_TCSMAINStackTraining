@@ -2,7 +2,7 @@
     <h2>Add Task Information</h2>
 <div class="row">
     <div class="col-3">
-
+        <div class="cliente">
     <form #taskRef="ngForm" (ngSubmit)="storeNewTask(taskRef.value)">
         <mat-form-field>
             <mat-label style="font-size: larger;">Employee ID:</mat-label>
@@ -26,10 +26,12 @@
         <button mat-stroked-button color="primary" 
         style="background-color:darkorange;" type="submit">Store</button>
     </form>
+</div>
     </div>
 
     <div class="col-8">
-        <table border="1">
+        <div class="cliente">
+        <table>
             <tr>
                 <th>Employee ID</th>
                 <th>Name</th>
@@ -37,13 +39,14 @@
                 <th>Date</th>
             </tr>
             <tr *ngFor="let temp of taskArray">
-                <td style="width: 15%;">{{temp.id}}</td>
-                <td style="width: 20%;">{{temp.name}}</td>
-                <td style="width: 45%;">{{temp.task}}</td>
+                <td style="width: 20%;">{{temp.id}}</td>
+                <td style="width: 15%;">{{temp.name}}</td>
+                <td style="width: 50%;">{{temp.task}}</td>
                 <td style="width: 20%;">{{temp.date}}</td>
             </tr>
         </table>
     </div>
+</div>
 
 </div>
 </div>
